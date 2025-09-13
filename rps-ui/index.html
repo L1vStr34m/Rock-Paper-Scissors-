@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rock Paper Scissors - GUI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Rock Paper Scissors</h1>
+
+  <div id="scoreboard">
+    <p>You: <span id="human-score">0</span></p>
+    <p>Computer: <span id="computer-score">0</span></p>
+  </div>
+
+  <div id="choices">
+    <button data-choice="rock">Rock</button>
+    <button data-choice="paper">Paper</button>
+    <button data-choice="scissors">Scissors</button>
+  </div>
+
+  <div id="results">
+    <p id="round-result">Make your move!</p>
+    <p id="computer-move"></p>
+  </div>
+
+  <div id="final-result" class="hidden"></div>
+
+  <button id="restart-btn" class="hidden">Restart Game</button>
+
+  <script src="rps-ui.js"></script>
+</body>
+</html>
